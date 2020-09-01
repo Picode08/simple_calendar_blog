@@ -15,7 +15,7 @@
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= blog.title %></td>
-        <td><%= blog.start_time.strftime("%Y-%m-%d %H:%M")%>/td>
+        <td><%= blog.start_time.strftime("%Y-%m-%d %H:%M")%></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog.id) %></td>
         <td><%= link_to 'Destroy', blog_path(blog.id), method: :delete, date: { confirm: 'Are you sure?'} %></td>
